@@ -46,13 +46,7 @@ class CommonConfig:
     TODAY_ENTRUSTS_MENU_PATH = ["查询[F4]", "当日委托"]
     TODAY_TRADES_MENU_PATH = ["查询[F4]", "当日成交"]
 
-    BALANCE_CONTROL_ID_GROUP = {
-        "资金余额": 1012,
-        "可用金额": 1016,
-        "可取金额": 1017,
-        "股票市值": 1014,
-        "总资产": 1015,
-    }
+    BALANCE_CONTROL_ID = 1308
 
     POP_DIALOD_TITLE_CONTROL_ID = 1365
 

@@ -126,20 +126,10 @@ class ClientTrader(IClientTrader):
     def balance(self):
         self._switch_left_menus(["查询[F4]", "资金股票"])
 
-        return self._get_balance_from_statics()
+        return self._get_grid_data(self._config.BALANCE_CONTROL_ID)
 
     def _init_toolbar(self):
         self._toolbar = self._main.child_window(class_name="ToolbarWindow32")
-
-    def _get_balance_from_statics(self):
-        result = {}
-        for key, control_id in self._config.BALANCE_CONTROL_ID_GROUP.items():
-            result[key] = float(
-                self._main.child_window(
-                    control_id=control_id, class_name="Static"
-                ).window_text()
-            )
-        return result
 
     @property
     def position(self):
