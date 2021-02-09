@@ -57,6 +57,19 @@ JSONDecodeError: Expecting value
 
 请勿使用 `记事本` 编辑账户的 `json` 配置文件，推荐使用 [notepad++](https://notepad-plus-plus.org/zh/) 或者 [sublime text](http://www.sublimetext.com/)
 
+# 系统找不到指定文件'UIAutomation.dll'
+```shell
+cd c:\windows\syswow64\
+regsvr32 UIAutomationCore.dll
+python
+import pywinauto
+```
+
+# 找不到win32api
+```shell
+pip install pywin32
+```
+
 ### 其他
 
 [软件实现原理](http://www.jisilu.cn/question/42707)
